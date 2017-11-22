@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.agent.dao.IAccount">
+  <resultMap type="Account" id="accountMap">
+  	<id column="id" property="id"/>
+  	<result column="userId" property="uid"/>
+  	<result column="money" property="money"/>
+  	<result column="moneyBak" property="moneyBak"/>
+  </resultMap>
+ 
+  <select id="findAll" resultMap="accountMap">
+  	 <![CDATA[
+  		
+	select * from as_account;
+  		]]>
+  </select>
+</mapper>

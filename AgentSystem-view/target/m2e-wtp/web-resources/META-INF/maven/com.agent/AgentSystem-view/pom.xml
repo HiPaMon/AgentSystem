@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.agent</groupId>
+    <artifactId>AgentSystem</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <!-- <groupId>com.agent</groupId> -->
+  <artifactId>AgentSystem-view</artifactId>
+  <!-- <version>0.0.1-SNAPSHOT</version> -->
+  <packaging>war</packaging>
+  <name>AgentSystem-view Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- 添加依赖关系 dao 下来 view -->
+    <dependency>
+      <groupId>com.agent</groupId>
+      <artifactId>AgentSystem-dao</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <!-- service依赖 -->
+    <dependency>
+      <groupId>com.agent</groupId>
+      <artifactId>AgentSystem-service</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    
+     <dependency>
+      <groupId>com.agent</groupId>
+      <artifactId>AgentSystem-entity</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    
+     <dependency>
+      <groupId>com.agent</groupId>
+      <artifactId>AgentSystem-biz</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    
+    
+  </dependencies>
+  
+  
+  <build>
+    <finalName>AgentSystem-view</finalName>
+  </build>
+</project>
